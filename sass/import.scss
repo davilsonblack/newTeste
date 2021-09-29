@@ -1,0 +1,32 @@
+// Google Fonte Roboto
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,900;1,500&display=swap");
+
+// Variaveis
+@import "./variaveis.scss";
+
+// Config
+@import "./config.scss";
+
+// Animações
+@import "./animation.scss";
+
+// Contato
+@import "./arquivosHome/contato.scss";
+
+// Header
+@import "./header.scss";
+
+// Carrossel
+@import "./arquivosHome/carrossel.scss";
+
+// Servico
+@import "./arquivosHome/servico.scss";
+
+// Parallax 1
+@import "./arquivosHome/parallax.scss";
+
+// Footer
+@import "./footer.scss";
+
+// Enquadrando Responsivo
+@import "./responsive.scss"

@@ -1,0 +1,398 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,900;1,500&display=swap");
+* {
+  font-family: "Roboto", sans-serif;
+}
+
+a {
+  text-decoration: none !important;
+  color: #fff;
+}
+a:hover {
+  color: #e0d3c1;
+}
+
+body {
+  overflow: hidden auto;
+}
+
+@keyframes rodar {
+  0% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+.contato {
+  background-color: #EBEBEB;
+}
+.contato .contato-linha {
+  display: flex;
+}
+@media (max-width: 1230px) {
+  .contato .contato-linha {
+    flex-direction: column;
+  }
+  .contato .contato-linha form {
+    width: 100%;
+  }
+}
+.contato .contato-linha picture {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.contato .contato-linha picture .contato-imagem {
+  width: 630px;
+  box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  padding: 40px;
+}
+.contato .contato-linha picture .contato-imagem:hover {
+  transition: 0.5s;
+  transform: scale(1.05);
+  background-color: white;
+}
+.contato .contato-linha form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.contato .contato-linha form p {
+  margin-bottom: 0;
+}
+.contato .contato-linha form input {
+  margin-bottom: 15px;
+  border-radius: 5px;
+  border: 2px solid #EBEBEB;
+  outline: none;
+  width: 100%;
+}
+.contato .contato-linha form .contato-mensagem {
+  max-width: 500px;
+  margin: 100px 0;
+}
+.contato .contato-linha form #contato-mensagem {
+  height: 100px;
+}
+.contato .contato-linha form button {
+  margin: 20px 0;
+  width: auto;
+  border-radius: 5px;
+  background-color: #FAAA77;
+  color: white;
+  padding: 5px;
+  width: 100%;
+  border: none;
+}
+.contato .contato-linha form button:hover {
+  transition: 0.5s;
+  background-color: #F37335;
+}
+
+#header {
+  width: 100%;
+  background-color: #212529;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 10px solid #E4A14A;
+  padding: 20px 40px;
+}
+#header #logotipo {
+  display: flex;
+  align-items: center;
+}
+#header #logotipo #logotipo-icon {
+  margin-right: 30px;
+  width: 100%;
+  height: 80px;
+}
+#header #logotipo #logotipo-icon:hover {
+  animation: rodar 2s linear infinite;
+}
+#header #logotipo #logotipo-texto {
+  height: 80px;
+  margin-top: 8px;
+}
+#header #btn {
+  display: none;
+}
+@media (max-width: 1100px) {
+  #header #logotipo-icon {
+    display: none;
+  }
+  #header #nav {
+    display: none;
+    z-index: 99999999;
+    position: absolute;
+    background-color: #212529;
+    height: 400px;
+    left: 0px;
+    border-radius: 0 0 10px 0;
+    border-bottom: 10px solid #E4A14A;
+    margin-top: 562px;
+    width: 100%;
+  }
+  #header #nav #menu {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 0;
+    width: 100%;
+  }
+  #header #nav #menu li {
+    width: 100%;
+    padding: 20px 0;
+    margin: 0 40px 0 0;
+  }
+  #header #nav #menu li:hover {
+    transition: 0.8s;
+    background-color: #191c1f;
+  }
+  #header #nav #menu li:hover a {
+    color: #e0d3c1;
+    padding-bottom: 0;
+    border: 0;
+  }
+  #header #nav #menu li a {
+    padding: 0 40px;
+  }
+  #header #btn {
+    display: block;
+    background: none;
+    border: none;
+    padding: 10px;
+    font-size: 2rem;
+    color: #E4A14A;
+  }
+  #header #btn:hover {
+    transition: 0.5s;
+    transform: scale(1.5);
+  }
+}
+#header #nav #menu {
+  display: flex;
+  list-style: none;
+  text-transform: uppercase;
+  font-size: 1.2rem;
+  margin: 0;
+}
+#header #nav #menu a {
+  padding: 15px;
+  color: #E4A14A;
+}
+#header #nav #menu a:hover {
+  transition: 0.2s;
+  cursor: pointer;
+  color: #e0d3c1;
+  border-bottom: 4px solid #e0d3c1;
+  padding-bottom: 57px;
+}
+
+body main {
+  padding: 0 !important;
+}
+
+#container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  max-width: 1600px;
+  margin: 70px auto;
+}
+#container #servico-info {
+  text-align: center;
+  max-width: 600px;
+  margin: auto;
+}
+#container #servico-info h2 {
+  font-size: 2.2rem;
+}
+#container #servico-info p {
+  padding: 30px 20px;
+}
+#container #servico-info .botao1 {
+  background-color: #1B5478;
+  border: 2px solid #1B5478;
+  color: white;
+}
+#container #servico-info .botao2 {
+  border: 2px solid #1B5478;
+  color: #1B5478;
+}
+#container #servico-info .botao2:hover {
+  transition: 0.5s;
+  background-color: #1B5478;
+  color: white;
+}
+#container #servico-imagem {
+  width: 700px;
+}
+#container #servico-imagem img {
+  box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.25);
+  width: 100%;
+  padding: 5% 0;
+  background-size: cover;
+  border-radius: 8px;
+}
+
+.parallax-imagem-1 {
+  margin: auto;
+  width: 100%;
+  height: 800px;
+  background-image: url("/assets/Sonho.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position: center center;
+  transform: scale(1.02);
+}
+
+footer {
+  border-top: 10px solid #E4A14A;
+  color: white;
+  background-color: #212529;
+}
+footer section {
+  padding: 50px 0px;
+}
+footer section article .h7 {
+  text-transform: uppercase;
+  color: #E4A14A;
+  font-size: 1em;
+  margin-bottom: 10px;
+}
+footer section article .footer-contato .footer-contato-informacoes {
+  padding: 50px 15px;
+}
+footer section article .footer-contato .footer-contato-informacoes #footer-contato-mensagem-id {
+  height: 4rem;
+  outline: none;
+  border: none;
+  border-radius: 5px;
+}
+footer section article .footer-endereco .footer-endereco-local {
+  padding: 50px 15px;
+  display: flex;
+  flex-direction: column;
+}
+footer section article .footer-outros .footer-outros-sugestoes {
+  padding: 50px 15px;
+}
+footer section article .footer-mais {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+footer section article .footer-mais-mais form input {
+  width: 75%;
+  outline: none;
+  margin-bottom: 10px;
+  border: 2px solid white;
+  border-radius: 5px 0 0 5px;
+}
+footer section article .footer-mais-mais form button {
+  border: none;
+  outline: none;
+  border-radius: 0 5px 5px 0;
+  border: 2px solid white;
+}
+footer section article .footer-mais-mais a .instagram, footer section article .footer-mais-mais a .facebook {
+  padding: 5px;
+  font-size: 20px;
+}
+
+@media (max-width: 1320px) {
+  .redes-sociais {
+    display: none;
+  }
+
+  .text-menu {
+    display: none;
+  }
+
+  .icon-menu {
+    width: 50px;
+    height: 50px;
+  }
+
+  .lista-menu {
+    left: 80%;
+  }
+
+  #container #servico-imagem {
+    order: -1;
+    margin-bottom: 30px;
+  }
+  #container #servico-imagem img {
+    box-shadow: none;
+  }
+}
+@media (max-width: 770px) {
+  .logo1 {
+    display: none;
+  }
+}
+@media (max-width: 750px) {
+  #carrossel-imagem-principal {
+    display: none;
+  }
+}
+@media (max-width: 1100px) {
+  #logotipo-icon {
+    display: none;
+  }
+
+  #nav {
+    display: none;
+    z-index: 99999999;
+    position: absolute;
+    background-color: #212529;
+    height: 400px;
+    left: 0px;
+    border-radius: 0 0 10px 0;
+    border-bottom: 10px solid #E4A14A;
+    margin-top: 562px;
+    width: 100%;
+  }
+  #nav #menu {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 0;
+    width: 100%;
+  }
+  #nav #menu li {
+    width: 100%;
+    padding: 20px 0;
+    margin: 0 40px 0 0;
+  }
+  #nav #menu li:hover {
+    transition: 0.8s;
+    background-color: #191c1f;
+  }
+  #nav #menu li:hover a {
+    color: #e0d3c1;
+    padding-bottom: 0;
+    border: 0;
+  }
+  #nav #menu li a {
+    padding: 0 40px;
+  }
+
+  #btn {
+    display: block;
+    background: none;
+    border: none;
+    padding: 10px;
+    font-size: 2rem;
+    color: #E4A14A;
+  }
+  #btn:hover {
+    transition: 0.5s;
+    transform: scale(1.5);
+  }
+}
+
+/*# sourceMappingURL=estilo.css.map */

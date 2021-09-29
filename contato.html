@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LS Contato</title>
+    
+    <!-- Favicons -->
+    <link rel="apple-touch-icon" sizes="57x57" href="./assets/Favicons/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="./assets/Favicons/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="./assets/Favicons/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="./assets/Favicons/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="./assets/Favicons/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="./assets/Favicons/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="./assets/Favicons/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="./assets/Favicons/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="./assets/Favicons/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="./assets/Favicons/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/Favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="./assets/Favicons/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./assets/Favicons/favicon-16x16.png">
+    <link rel="manifest" href="./assets/Favicons/manifest.json">
+    <meta name="msapplication-TileColor" content="#212529">
+    <meta name="msapplication-TileImage" content="./assets/Favicons/ms-icon-144x144.png">
+    <meta name="theme-color" content="#212529">
+    <!-- end Favicons -->
+
+    
+    <!-- Import Font Awesome -->
+    <script src="https://kit.fontawesome.com/4555fcd592.js" crossorigin="anonymous" defer></script>
+
+    <!--Import Bootstrap-->
+    <link href="./css/Boostrap/bootstrap.css" rel="stylesheet">
+
+    <!--import CSS -->
+    <link rel='stylesheet' href='./css/estilo.css'>
+
+    <!-- Files JavaScript -->
+    <script src="./js/interacoes.js"></script>
+
+</head>
+<body>
+    <!-- Header -->
+    <header id='header'>
+        <!-- Logotipos  -->
+        <figure id='logotipo'>
+            <a href="./index.html" target='_blank'><img id='logotipo-icon' src="./assets/logotipo.svg" alt="logotipo-icon"></a>
+            <a href="./index.html" target='_blank'><img id='logotipo-texto'src="./assets/logo.svg" alt="Logotipo-text"></a>
+        </figure>
+        <!-- Botão -->
+        <button id='btn' onclick="clicar()"><i class="fas fa-bars"></i></button>
+        <!-- Nav -->
+        <nav id='nav'>
+            <!-- Menu -->
+            <ul id='menu'>
+                <li><a href="#">catalogos</a></li>
+                <li><a href="#">novidades</a href="#"></li>
+                <li><a href="#">blog</a></li>
+                <li><a href="#">servicos</a></li>
+                <li><a href="./contato.html" target='_blank'>contato</a></li>
+            </ul>
+            <!-- end Menu -->
+        </nav>
+        <!-- end Nav -->
+    </header>
+    <!-- end Header -->
+
+
+    <footer class="container-fluid" style='margin-top: 1000px;'>
+        <section class="container">
+            <article class="row">
+                <div class="footer-contato col-md-3">
+                    <div class="footer-contato-informacoes">
+                        <div class='h7'>Fale conosco</div>
+                        
+                        <span class='footer-telefone'>
+                            Telefone:
+                        <a href="tel:+22119888888888">(11)95869-5421</a> 
+                        </span> <br>
+
+                        <span class='footer-email'>
+                            E-mail:
+                        <a href="mailto:carreira.pontual@gmail.com">@carreira.pontual@gmail.com</a>
+                        </span> <br>
+                        
+                    </div>
+                </div>
+                <div class="footer-endereco col-md-3">
+                    <div class='footer-endereco-local'>
+                        <div class='h7'>Endereço</div>
+
+                        <span>
+                            Rua Pedro Medeiros, 474 <br>
+                            Jardim Vila Carrão <br>
+                            São Paulo - SP
+                        </span>
+                    </div>
+                </div>
+                <div class="footer-outros col-md-3">
+                    <div class="footer-outros-sugestoes">
+                        <div class='h7'>Outros</div>
+                        <a href="#">Sugestão</a>
+                        <br>            
+                        <a href="#">Reclamação</a>
+                    </div>
+                </div>
+                <div class="footer-mais col-md-3">
+                    <div class="footer-mais-mais">
+                        <div class='h7'>Registre-se para receber +novidades</div>
+                        <form>
+                            <input type="email" placeholder='E-mail'>
+                            <button>
+                                <i class="fas fa-chevron-right"></i>
+                            </button>
+                        </form>
+                        <span>Política de Privacidade</span>
+                        <br>
+                        <a href='https://www.instagram.com/' target="_black">
+                            <i class="fab fa-instagram-square instagram"></i>
+                            /lsplanejados
+                        </a>
+                        <br>
+                        <a href='https://www.facebook.com/' target="_black">
+                            <i class="fab fa-facebook-square facebook"></i>
+                            /lsplanejados
+                        </a>
+                    </div>
+                </div>
+            </article>
+        </section>
+    </footer>
+
+    
+    <!--import Popper bootstrap scripts-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js" integrity="sha384-eMNCOe7tC1doHpGoWe/6oMVemdAVTMs2xqW4mwXrXsW0L84Iytr2wi5v2QjrP/xp" crossorigin="anonymous"></script>
+    <script rel='stylesheet' src="./js/bootstrap.min.js.map"></script>
+
+</body>
+</html>

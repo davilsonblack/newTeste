@@ -1,0 +1,17 @@
+// @keyframes rodar // Chamando a função e referenciando um nome a ela
+// FROM // Inicio da Animação, pode ser usado FROM ou 0% para iniciar
+// transform: rotate(0) // A rotacao começa com 0
+// }
+// TO // Término da animação, pode ser usado TO ou 100%
+// transform: rotate(360deg) // Termina apos a volta em 360 graus
+
+// animation: loading 2s linear infinite;
+
+@keyframes rodar { 
+    0% { 
+        transform: rotate(0); 
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}

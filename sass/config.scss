@@ -1,0 +1,16 @@
+* {
+    font-family: 'Roboto', sans-serif;
+    // border: red 1px solid;
+}
+a {
+    text-decoration: none !important;
+    color: $branco;
+
+    &:hover{
+        color: $text-hover;
+    }
+}
+
+body{
+    overflow: hidden auto;
+}
